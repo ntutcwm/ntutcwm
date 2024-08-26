@@ -7,6 +7,11 @@
 
 1. 安裝基本必要套件
 ```bash
+sudo apt install libnss3-tools
+sudo dpkg -i libncurses5_6.4-2_amd64.deb
+sudo dpkg -i libncurses5_6.4-2_amd64.deb
+sudo add-apt-repository universe
+
 sudo apt install git gcc g++ make cmake ccache pkg-config \
   libfmt-dev libspdlog-dev libyaml-cpp-dev libuhd-dev uhd-host \
   libabsl-dev libprotobuf-dev libprotoc-dev protobuf-compiler \
@@ -22,6 +27,9 @@ sudo apt install git gcc g++ make cmake ccache pkg-config \
 如果曾經裝過 nlohmann-json3-dev，必須移除，以免跟 SISO2 裡面附的套件版本衝突
 ```bash
 sudo apt remove nlohmann-json3-dev
+sudo snap install curl  # version 8.1.2
+
+
 ```
 參考 https://github.com/nodesource/distributions 安裝 nodejs
 ```bash
